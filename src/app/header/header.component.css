@@ -1,0 +1,179 @@
+/* Gradient Background for the Entire Page */
+body {
+    background: linear-gradient(to right, #1e3a8a, #3b82f6);
+    /* Dark blue to bright blue gradient */
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Container for the Home Page */
+  .home-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  /* Header Styles */
+  .header {
+    background: #1e3a8a;
+    /* Dark blue */
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+  }
+  
+  /* Main Content Styles */
+  .main-content {
+    display: flex;
+    flex: 1;
+  }
+  
+  /* Sidebar Styles */
+  .sidebar {
+    text-align: unset;
+    width: 129px;
+    background: #5f6476;
+    color: #fff;
+    padding: 6px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .sidebar nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar nav ul li {
+    margin: 10px 0;
+  }
+  
+  .sidebar nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    /* Emphasize the links */
+  }
+  
+  .sidebar nav ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Content Area Styles */
+  .content {
+    flex: 1;
+    padding: 20px;
+    background: #fff;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Shadow for depth */
+  }
+  
+  /* User List Table Styles */
+  .content ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .content ul li {
+    margin: 0;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    background: #f9f9f9;
+  }
+  
+  .content ul li:nth-child(even) {
+    background: #f1f5f9;
+    /* Alternate row color */
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  table,
+  th,
+  td {
+    border: 1px solid #ddd;
+  }
+  
+  th,
+  td {
+    padding: 8px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #f4f4f4;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* Style for the container holding the message */
+  .no-users-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    /* Adjust height as needed */
+    width: 100%;
+    text-align: center;
+    position: relative;
+  }
+  
+  /* Style for the message itself */
+  .no-users-message {
+    font-size: 1.2em;
+    color: #666;
+    animation: fadeIn 1s ease-out;
+  }
+  
+  /* Animation for fading in */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+  
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Optional styling for general table and content */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  table,
+  th,
+  td {
+    border: 1px solid #ddd;
+  }
+  
+  th,
+  td {
+    padding: 8px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #f4f4f4;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  tr:hover {
+    background-color: #f1f1f1;
+  }

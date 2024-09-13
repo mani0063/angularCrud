@@ -1,0 +1,123 @@
+/* Gradient Background for the Entire Page */
+.home-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: linear-gradient(to right, #1e3a8a, #3b82f6); /* Gradient background */
+  }
+  
+  /* Header Styles */
+  .header {
+    background: #1e3a8a; /* Dark blue */
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+  }
+  
+  /* Main Content Styles */
+  .main-content {
+    display: flex;
+    flex: 1;
+  }
+  
+  /* Sidebar Styles */
+  .sidebar {
+    text-align: unset;
+    width: 129px;
+    background: #5f6476;
+    color: #fff;
+    padding: 6px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .sidebar nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar nav ul li {
+    margin: 10px 0;
+  }
+  
+  .sidebar nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold; /* Emphasize the links */
+  }
+  
+  .sidebar nav ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Content Area Styles */
+  .content {
+    flex: 1;
+    padding: 20px;
+    background: #fff;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Profile Container Styles */
+  .profile-container {
+    max-width: 800px; /* Centering the profile container */
+    margin: 0 auto; /* Center horizontally */
+    padding: 20px;
+    background: #fff; /* Background of the profile container */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow for the profile container */
+  }
+  
+  /* Style for user profile details */
+  .profile-container h2 {
+    margin-top: 0;
+  }
+  
+  .profile-container p {
+    font-size: 16px;
+    margin: 10px 0;
+  }
+  
+  .profile-container strong {
+    display: inline-block;
+    width: 150px;
+  }
+  
+  /* Footer Styles */
+  .footer {
+    background: #1e3a8a; /* Dark blue */
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+  }
+  
+  /* No Users Message Container Styles */
+  .no-users-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px; /* Adjust height as needed */
+    width: 100%;
+    text-align: center;
+    position: relative;
+  }
+  
+  /* Style for the message itself */
+  .no-users-message {
+    font-size: 1.2em;
+    color: #666;
+    animation: fadeIn 1s ease-out;
+  }
+  
+  /* Animation for fading in */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+  
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

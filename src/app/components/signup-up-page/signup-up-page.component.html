@@ -1,0 +1,61 @@
+<!-- signup.component.html -->
+<div class="signup-wrapper">
+  <div class="form-container">
+    <h3>Create An Account</h3>
+    <form [formGroup]="signUpForm" (ngSubmit)="signUp()">
+      <div class="form-group">
+        <div class="form-field">
+          <input id="email" formControlName="email" type="email" placeholder=" " required>
+          <label for="email">Email</label>
+          <div *ngIf="signUpForm.get('email')?.invalid && (signUpForm.get('email')?.touched || submitted)">
+            <small *ngIf="signUpForm.get('email')?.errors?.['required']">Email is required.</small>
+            <small *ngIf="signUpForm.get('email')?.errors?.['email']">Please enter a valid email.</small>
+          </div>
+        </div>
+
+        <div class="form-field">
+          <input id="password" formControlName="password" type="password" placeholder=" " required>
+          <label for="password">Password</label>
+          <div *ngIf="signUpForm.get('password')?.invalid && (signUpForm.get('password')?.touched || submitted)">
+            <small *ngIf="signUpForm.get('password')?.errors?.['required']">Password is required.</small>
+          </div>
+        </div>
+
+        <div class="form-field">
+          <input id="firstname" formControlName="firstname" type="text" placeholder=" " required>
+          <label for="firstname">First Name</label>
+          <div *ngIf="signUpForm.get('firstname')?.invalid && (signUpForm.get('firstname')?.touched || submitted)">
+            <small *ngIf="signUpForm.get('firstname')?.errors?.['required']">First Name is required.</small>
+          </div>
+        </div>
+
+        <div class="form-field">
+          <input id="lastname" formControlName="lastname" type="text" placeholder=" " required>
+          <label for="lastname">Last Name</label>
+          <div *ngIf="signUpForm.get('lastname')?.invalid && (signUpForm.get('lastname')?.touched || submitted)">
+            <small *ngIf="signUpForm.get('lastname')?.errors?.['required']">Last Name is required.</small>
+          </div>
+        </div>
+
+        <div class="form-field">
+          <input id="phone" formControlName="phone" type="number" placeholder=" " required>
+          <label for="phone">Phone</label>
+          <div *ngIf="signUpForm.get('phone')?.invalid && (signUpForm.get('phone')?.touched || submitted)">
+            <small *ngIf="signUpForm.get('phone')?.errors?.['required']">Phone number is required.</small>
+            <small *ngIf="signUpForm.get('phone')?.errors?.['pattern']">Please enter a valid phone number.</small>
+          </div>
+        </div>
+      </div>
+
+      <!-- Display error message -->
+      <div *ngIf="errorMessage" class="error-message">
+        {{ errorMessage }}
+      </div>
+
+      <button type="submit">Submit</button>
+      <span>Already have an account? 
+        <a routerLink="/login" routerLinkActive="active">Login</a>
+      </span>
+    </form>
+  </div>
+</div>

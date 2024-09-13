@@ -1,0 +1,36 @@
+<app-header></app-header>
+  <div class="home-container">
+    <div class="content">
+      <h3>User Listings</h3>
+      <table *ngIf="users.length > 0">
+        <thead>
+          <tr>
+            <th>Email</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Phone number</th>
+            <th> Role </th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let user of users">
+            <td>{{ user.email }}</td>
+            <td>{{ user.firstname }}</td>
+            <td>{{ user.lastname }}</td>
+            <td>{{ user.phone }}</td>
+            <td>{{ user.role }}</td>
+            <td>{{ user.status }}</td>
+          </tr>
+        </tbody>
+      </table>
+      <div *ngIf="users.length === 0" class="no-users-container">
+        <p class="no-users-message">No users found.</p>
+      </div>
+      <p *ngIf="errorMessage">{{ errorMessage }}</p>
+    </div>
+  </div>
+
+<app-footer></app-footer>
+
+

@@ -1,0 +1,81 @@
+{
+  "signupUsersList": [
+    {
+      "email": "bolu@gmail.com",
+      "password": "1234",
+      "id": "31d7"
+    },
+    {
+      "id": "dd47",
+      "email": "",
+      "password": "",
+      "firstname": "",
+      "lastname": "",
+      "phone": ""
+    },
+    {
+      "id": "ce82",
+      "email": "",
+      "password": "",
+      "firstname": "",
+      "lastname": "",
+      "phone": ""
+    },
+    {
+      "id": "e867",
+      "email": "",
+      "password": "",
+      "firstname": "",
+      "lastname": "",
+      "phone": ""
+    },
+    {
+      "id": "5925",
+      "email": "",
+      "password": "",
+      "firstname": "",
+      "lastname": "",
+      "phone": ""
+    },
+    {
+      "id": "b7aa",
+      "email": "",
+      "password": "",
+      "firstname": "",
+      "lastname": "",
+      "phone": 7688
+    },
+    {
+      "id": "5e45",
+      "email": "",
+      "password": "",
+      "firstname": "",
+      "lastname": "",
+      "phone": ""
+    },
+    {
+      "id": "2567",
+      "email": "",
+      "password": "",
+      "firstname": "",
+      "lastname": "",
+      "phone": ""
+    },
+    {
+      "id": "6c98",
+      "email": "sf4234234@gmail.com",
+      "password": "sdf",
+      "firstname": "dsfsd",
+      "lastname": "sdf",
+      "phone": 232131
+    },
+    {
+      "id": "253f",
+      "email": "test@yopmail.com",
+      "password": "54321333",
+      "firstname": "test32",
+      "lastname": "test last",
+      "phone": 543322222
+    }
+  ]
+}
